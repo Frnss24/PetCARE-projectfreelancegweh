@@ -43,6 +43,9 @@ export default async function Home() {
       <main className="overflow-hidden px-4 pb-8 pt-8 sm:px-6 lg:px-8">
         <section className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-10">
           <div>
+            <span className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-amber-900">
+              Ini masih MVP Model
+            </span>
             <p className="text-sm font-semibold uppercase tracking-[0.34em] text-slate-500">Modern pet care</p>
             <h1 className="font-display mt-4 max-w-3xl text-5xl leading-tight text-slate-900 sm:text-6xl lg:text-7xl">
               Layanan Grooming & Pencucian Hewan Profesional
