@@ -44,7 +44,3 @@ npm run dev
 - `POST /api/bookings`
 - `PATCH /api/bookings/:id`
 - `DELETE /api/bookings/:id`
-
-## Catatan
-
-Dashboard admin pada implementasi ini belum memiliki autentikasi. Untuk production, tambahkan auth admin sebelum deployment.
