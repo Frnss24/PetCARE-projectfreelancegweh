@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PetWash
 
-## Getting Started
+Website modern untuk layanan pencucian dan grooming hewan peliharaan berbasis Next.js App Router, Tailwind CSS, TypeScript, Prisma ORM, dan PostgreSQL.
 
-First, run the development server:
+## Fitur
+
+- Landing page modern dengan hero, layanan, testimonial, gallery sebelum-sesudah, dan footer kontak
+- Halaman services dengan daftar layanan lengkap dan harga
+- Form booking tervalidasi menggunakan React Hook Form + Zod
+- API routes Next.js untuk create, list, update status, dan delete booking
+- Dashboard admin untuk memantau booking
+- Prisma schema untuk User, Service, dan Booking
+- Animasi ringan menggunakan Framer Motion
+- SEO metadata untuk halaman utama
+- Responsive design dengan pendekatan mobile-first
+
+## Menjalankan Project
+
+1. Install dependency:
+
+```bash
+npm install
+```
+
+2. Siapkan PostgreSQL lalu isi `DATABASE_URL` pada file `.env`.
+
+3. Generate Prisma Client dan sinkronkan schema:
+
+```bash
+npm run prisma:generate
+npm run db:push
+```
+
+4. Jalankan development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Endpoint API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `GET /api/services`
+- `GET /api/bookings`
+- `POST /api/bookings`
+- `PATCH /api/bookings/:id`
+- `DELETE /api/bookings/:id`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Catatan
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dashboard admin pada implementasi ini belum memiliki autentikasi. Untuk production, tambahkan auth admin sebelum deployment.

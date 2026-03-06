@@ -1,0 +1,14 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="360" rx="28" fill="#FFF6EE"/>
+  <rect x="98" y="250" width="324" height="52" rx="26" fill="#E7D2BC"/>
+  <ellipse cx="260" cy="190" rx="94" ry="76" fill="#D8BEA5"/>
+  <ellipse cx="260" cy="206" rx="60" ry="46" fill="#EAD8C7"/>
+  <circle cx="236" cy="185" r="8" fill="#25313B"/>
+  <circle cx="285" cy="185" r="8" fill="#25313B"/>
+  <ellipse cx="260" cy="208" rx="9" ry="7" fill="#25313B"/>
+  <path d="M242 221C249 229 271 229 278 221" stroke="#25313B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M196 150L220 102L245 154" fill="#D8BEA5"/>
+  <path d="M276 154L299 102L324 150" fill="#D8BEA5"/>
+  <path d="M188 252C167 229 162 190 176 157" stroke="#B38F74" stroke-width="12" stroke-linecap="round"/>
+  <text x="32" y="48" fill="#8D6B58" font-size="28" font-family="Arial, sans-serif">Before</text>
+</svg>
